@@ -8,15 +8,16 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.only(top: 32.0, left: 8, right: 8),
+    return Padding(
+      padding: const EdgeInsets.only(top: 32.0, left: 8, right: 8),
       child: Column(
         children: [
-          CustomAppBar(),
-          SizedBox(
-            height: 15,
-          ),
-          NotesItem(),
+            CustomAppBar(text: 'Notes',icon: IconButton(onPressed: (){},icon: const Icon(Icons.search),)),
+          Expanded(
+              child: ListView.builder(
+            itemBuilder: (context, index) => const NotesItem(),
+                itemCount: 4,
+          ))
         ],
       ),
     );

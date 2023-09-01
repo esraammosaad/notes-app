@@ -16,7 +16,7 @@ class _EditNotesViewBodyState extends State<EditNotesViewBody> {
   @override
   Widget build(BuildContext context) {
     return   Padding(
-      padding: const EdgeInsets.only(top: 32.0, left: 8, right: 8),
+      padding: const EdgeInsets.only(top: 32.0, left: 10, right: 10),
       child: Form(
         key: formKey,
         autovalidateMode:autoValidateMode ,

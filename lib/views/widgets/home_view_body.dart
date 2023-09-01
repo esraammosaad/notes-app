@@ -9,7 +9,7 @@ class HomeViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 32.0, left: 8, right: 8),
+      padding: const EdgeInsets.only(top: 32.0, left: 10, right: 10),
       child: Column(
         children: [
             CustomAppBar(text: 'Notes',icon: IconButton(onPressed: (){},icon: const Icon(Icons.search),)),
